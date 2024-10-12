@@ -1,0 +1,32 @@
+CRITICAL - 2024-03-04 14:59:59 --> Invalid file: "exam_result.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('exam_result.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('exam_result', [], true)
+ 3 APPPATH\Controllers\ExamController.php(151): view('exam_result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->showResult()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-04 15:00:45 --> Invalid file: "successexam.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('successexam.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('successexam', [], true)
+ 3 APPPATH\Controllers\ExamController.php(151): view('successexam', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->showResult()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-04 15:07:47 --> Undefined variable $passingScore
+in APPPATH\Views\enrollment\successexam.php on line 27.
+ 1 APPPATH\Views\enrollment\successexam.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $passingScore', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\enrollment\\successexam.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\enrollment\\successexam.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('enrollment/successexam', [], true)
+ 5 APPPATH\Controllers\ExamController.php(151): view('enrollment/successexam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->showResult()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')

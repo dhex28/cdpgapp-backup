@@ -1,0 +1,138 @@
+ERROR - 2024-02-13 05:42:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Colegio_de_PuertoGalera\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Colegio_de_PuertoGalera\app\Controllers\Home.php(58): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+#9 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Colegio_de_PuertoGalera\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Colegio_de_PuertoGalera\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#3 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\laragon\www\Colegio_de_PuertoGalera\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\laragon\www\Colegio_de_PuertoGalera\app\Controllers\Home.php(58): CodeIgniter\Model->insert(Array)
+#7 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+#8 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Colegio_de_PuertoGalera\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Colegio_de_PuertoGalera\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-02-13 05:42:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teacher` (`first_name`, `last_name`, `phone_number`, `sex`, `role`, `employee_id`, `birth_date`) VALUES (:first_name:, :last_name:, :phone_number:, :sex:, :role:, :employee_id:, :birth_date:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Home.php(58): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+ERROR - 2024-02-13 05:43:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cdpgdb' in C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'cdpgdb', 3306, '', 0)
+#1 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Colegio_de_PuertoGalera\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Colegio_de_PuertoGalera\app\Controllers\Home.php(58): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+#9 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Colegio_de_PuertoGalera\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Colegio_de_PuertoGalera\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cdpgdb' in C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#3 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\laragon\www\Colegio_de_PuertoGalera\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\laragon\www\Colegio_de_PuertoGalera\app\Controllers\Home.php(58): CodeIgniter\Model->insert(Array)
+#7 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+#8 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Colegio_de_PuertoGalera\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Colegio_de_PuertoGalera\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-02-13 05:43:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cdpgdb'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teacher` (`first_name`, `last_name`, `phone_number`, `sex`, `role`, `employee_id`, `birth_date`) VALUES (:first_name:, :last_name:, :phone_number:, :sex:, :role:, :employee_id:, :birth_date:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Home.php(58): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+ERROR - 2024-02-13 05:43:18 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cdpgdb' in C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'cdpgdb', 3306, '', 0)
+#1 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Colegio_de_PuertoGalera\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Colegio_de_PuertoGalera\app\Controllers\Home.php(58): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+#9 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Colegio_de_PuertoGalera\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Colegio_de_PuertoGalera\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cdpgdb' in C:\laragon\www\Colegio_de_PuertoGalera\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\Colegio_de_PuertoGalera\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#3 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\laragon\www\Colegio_de_PuertoGalera\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\laragon\www\Colegio_de_PuertoGalera\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\laragon\www\Colegio_de_PuertoGalera\app\Controllers\Home.php(58): CodeIgniter\Model->insert(Array)
+#7 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+#8 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Colegio_de_PuertoGalera\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Colegio_de_PuertoGalera\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Colegio_de_PuertoGalera\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-02-13 05:43:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cdpgdb'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teacher` (`first_name`, `last_name`, `phone_number`, `sex`, `role`, `employee_id`, `birth_date`) VALUES (:first_name:, :last_name:, :phone_number:, :sex:, :role:, :employee_id:, :birth_date:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Home.php(58): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->addTeacher()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')

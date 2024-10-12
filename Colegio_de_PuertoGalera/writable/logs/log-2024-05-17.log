@@ -1,0 +1,16 @@
+CRITICAL - 2024-05-17 04:01:23 --> Undefined variable $totalTeachers
+in APPPATH\Views\admin\dashboard.php on line 57.
+ 1 APPPATH\Views\admin\dashboard.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalTeachers', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\admin\\dashboard.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('admin/dashboard.php', null, true)
+ 5 APPPATH\Views\admin\index.php(1): CodeIgniter\View\View->include('admin/dashboard.php')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\admin\\index.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/index', [], true)
+ 9 APPPATH\Controllers\Home.php(74): view('admin/index')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->admin()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')

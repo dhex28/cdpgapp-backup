@@ -1,0 +1,8 @@
+CRITICAL - 2024-04-08 03:22:26 --> Undefined array key "q1"
+in APPPATH\Controllers\ExamController.php on line 83.
+ 1 APPPATH\Controllers\ExamController.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q1"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')

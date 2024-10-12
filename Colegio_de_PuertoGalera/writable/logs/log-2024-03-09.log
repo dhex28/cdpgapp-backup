@@ -1,0 +1,40 @@
+CRITICAL - 2024-03-09 01:45:17 --> Undefined array key "q27"
+in APPPATH\Controllers\ExamController.php on line 128.
+ 1 APPPATH\Controllers\ExamController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q27"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-09 01:46:07 --> Undefined array key "q37"
+in APPPATH\Controllers\ExamController.php on line 128.
+ 1 APPPATH\Controllers\ExamController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q37"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-09 15:41:51 --> Invalid file: "form/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('form/index', [], true)
+ 3 APPPATH\Controllers\Auth.php(18): view('form/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-09 16:46:50 --> Class "App\Libraries\Hash" not found
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-09 16:57:23 --> Class "App\Libraries\Hash" not found
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')

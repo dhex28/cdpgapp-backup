@@ -1,0 +1,60 @@
+CRITICAL - 2024-03-02 15:30:10 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\ExamController.php(23): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-02 16:21:54 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\ExamController.php on line 112.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ExamController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ExamController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ExamController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-02 16:22:35 --> Undefined array key "q43"
+in APPPATH\Controllers\ExamController.php on line 128.
+ 1 APPPATH\Controllers\ExamController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q43"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-02 16:24:19 --> Undefined array key "q43"
+in APPPATH\Controllers\ExamController.php on line 128.
+ 1 APPPATH\Controllers\ExamController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q43"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-02 16:30:29 --> Undefined array key "q43"
+in APPPATH\Controllers\ExamController.php on line 128.
+ 1 APPPATH\Controllers\ExamController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q43"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-02 16:32:36 --> Undefined array key "q43"
+in APPPATH\Controllers\ExamController.php on line 129.
+ 1 APPPATH\Controllers\ExamController.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q43"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-02 16:36:06 --> Undefined array key "q24"
+in APPPATH\Controllers\ExamController.php on line 129.
+ 1 APPPATH\Controllers\ExamController.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q24"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')

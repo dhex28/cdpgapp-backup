@@ -1,0 +1,24 @@
+CRITICAL - 2024-04-29 17:31:11 --> Undefined variable $newsList
+in APPPATH\Views\admin\allnews.php on line 53.
+ 1 APPPATH\Views\admin\allnews.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newsList', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\admin\\allnews.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\admin\\allnews.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/allnews', [], true)
+ 5 APPPATH\Controllers\NewsController.php(33): view('admin/allnews', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\NewsController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-04-29 17:32:48 --> Undefined array key "image"
+in APPPATH\Views\admin\allnews.php on line 60.
+ 1 APPPATH\Views\admin\allnews.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\admin\\allnews.php', 60)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Views\\admin\\allnews.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/allnews', [], true)
+ 5 APPPATH\Controllers\NewsController.php(33): view('admin/allnews', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\NewsController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')

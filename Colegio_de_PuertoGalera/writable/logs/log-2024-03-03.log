@@ -1,0 +1,16 @@
+CRITICAL - 2024-03-03 11:19:36 --> Undefined array key "q1"
+in APPPATH\Controllers\ExamController.php on line 128.
+ 1 APPPATH\Controllers\ExamController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q1"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
+CRITICAL - 2024-03-03 11:21:52 --> Undefined array key "q4"
+in APPPATH\Controllers\ExamController.php on line 128.
+ 1 APPPATH\Controllers\ExamController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "q4"', 'C:\\laragon\\www\\Colegio_de_PuertoGalera\\app\\Controllers\\ExamController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExamController->submitExam()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExamController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Colegio_de_PuertoGalera\\public\\index.php')
